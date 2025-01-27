@@ -1,0 +1,142 @@
+body, html {
+  width: 450px;
+  height: 550px; /* Ensure within extension limits */
+  padding: 10px 10px 10px 10px;
+  background-color: #202124;
+  overflow: hidden;
+  margin: 0; /* Ensure no body margin */
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Fill container height */
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #6EA8FE;
+  word-break: break-all;
+}
+
+
+#link-count {
+  color: white;
+  font-size: 18px;
+  overflow: visible; 
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: 400;
+  font-style: normal;
+  word-spacing: 1px;
+  padding-left: 5px;
+  letter-spacing: 1px;
+  flex-shrink: 0; 
+}
+
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#load-links, #clear-storage {
+  width: 100px;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 0.8em;
+  cursor: pointer;
+  
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#load-links {
+  background-color: green;
+  color: white;
+}
+
+#clear-storage {
+  background-color: red;
+  color: white;
+}
+
+#link-list {
+  flex-grow: 1;
+  overflow-y: auto; /* Enables vertical scrolling */
+  
+}
+
+#search-input {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  border: 1px solid transparent;
+  border-radius: 0.8em;
+  padding: 8px;
+  background-color: #292A2D;
+  transition: all 0.3s ease;
+  outline: none;
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  width: 85%;
+}
+
+#search-input:hover {
+  border-color: #6EA8FE;
+}
+
+#search-input:focus {
+  border-color: #00ff00;
+}
+
+#link-list li {
+  font-size: 16px;
+  background-color: #292A2D;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  width: 90%;
+  padding: 10px;
+  border-radius: 0.8em;
+
+}
+
+h2 {
+  margin: 10px 0px;
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  word-spacing: 1px;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  flex-shrink: 0; 
+  position: relative;
+  z-index: 1; 
+}
+
+a:visited {
+  color: purple;
+}
