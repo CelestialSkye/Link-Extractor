@@ -1,2 +1,2 @@
 # Link-Extractor
-Link Extractor for Chrome 
+A Chrome Link Extractor that also saves extracted data in cache
